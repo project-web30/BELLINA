@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesan Sekarang — Bellina Cosmetik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght@300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pgb">
+<header class="nav"><div class="wrap bar">
+  <a class="logo" href="index.html"><span class="ms">spa</span><span>BELLINA<small>COSMETIK</small></span></a>
+  <nav id="menu">
+    <a href="index.html#tentang">Tentang</a><a href="index.html#produk">Produk</a><a href="index.html#keunggulan">Keunggulan</a><a href="index.html#testimoni">Testimoni</a><a href="index.html#tim">Tim</a><a href="index.html#kontak">Kontak</a><a class="mo" href="pesan.html">Pesan Sekarang</a>
+  </nav>
+  <div class="nr"><a class="btn" href="pesan.html">Pesan Sekarang</a><a class="us" href="index.html#kontak" aria-label="Akun"><span class="ms">person</span></a>
+  <button id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span class="ms">menu</span></button></div>
+</div></header>
+
+<main class="pg"><div class="wrap">
+  <p class="crumb"><a href="index.html">Beranda</a> / <a href="index.html#produk">Produk</a> / Pesan sekarang</p>
+  <div class="steps"><b>01 Pilih produk</b><span>02 Konsultasi &amp; konfirmasi</span><span>03 Pembayaran</span></div>
+  <h1>Cantik alami, pilihan Anda.</h1>
+  <p class="lead">Pilih produk favorit dan shade Anda. Beauty consultant kami siap membantu hingga pesanan selesai.</p>
+
+  <h2>1. Pilih produk</h2>
+  <div class="g3">
+    <button class="pc" data-p="foundation"><div class="th" style="--img:url(../assets/foundation.jpg)"></div><div class="in2"><h3>Liquid Foundation</h3><p>Coverage fleksibel, hasil natural.</p><div class="pr"><span>Rp 89.000</span><span class="tag">Pilih produk</span></div></div></button>
+    <button class="pc" data-p="cushion"><div class="th" style="--img:url(../assets/cushion.jpg)"></div><div class="in2"><h3>Cushion Bellina</h3><p>Praktis untuk tampilan segar seketika.</p><div class="pr"><span>Rp 95.000</span><span class="tag">Pilih produk</span></div></div></button>
+    <button class="pc" data-p="concealer"><div class="th" style="--img:url(../assets/concealer.jpg)"></div><div class="in2"><h3>Bellina Concealer</h3><p>Samarkan noda dengan sentuhan halus.</p><div class="pr"><span>Rp 65.000</span><span class="tag">Pilih produk</span></div></div></button>
+  </div>
+
+  <div class="lay">
+    <div class="cd">
+      <h2>2. Temukan shade Anda</h2>
+      <p style="color:var(--mu)">Pilih rona kulit untuk rekomendasi shade yang sesuai.</p>
+      <div class="lb">Tingkat kecerahan</div>
+      <div class="opts"><button class="opt" data-t="0">Terang</button><button class="opt" data-t="1">Sedang</button><button class="opt" data-t="2">Tan</button><button class="opt" data-t="3">Gelap</button></div>
+      <div class="lb">Undertone kulit</div>
+      <div class="opts"><button class="opt" data-u="0">Cool / Pink</button><button class="opt" data-u="1">Neutral</button><button class="opt" data-u="2">Warm / Kuning</button></div>
+      <div class="res" aria-live="polite"><span class="dot" id="sumDot"></span><div><small>REKOMENDASI SHADE ANDA</small><h3 id="shName">02 Light Ivory</h3><p>Tampilan satin glowing alami sepanjang hari.</p></div></div>
+      <div class="qty"><span>Jumlah produk</span><div><button data-q="-1" aria-label="Kurangi jumlah">–</button><span id="qty">1</span><button data-q="1" aria-label="Tambah jumlah">+</button></div></div>
+    </div>
+
+    <aside class="cd sum" aria-label="Ringkasan pesanan">
+      <h2>Ringkasan pesanan</h2>
+      <div class="sh"><span class="th" id="sumImg" style="--img:url(../assets/cushion.jpg)"></span><div><h3 id="sumName">Cushion Bellina</h3><p id="sumShade">02 Light Ivory · 1 produk</p><b id="sumPrice">Rp 95.000</b></div></div>
+      <hr>
+      <div class="rw"><span>Subtotal</span><b id="sumSub">Rp 95.000</b></div>
+      <div class="rw"><span>Ongkos kirim</span><b style="color:#8A5A4F">Dikonfirmasi via chat</b></div>
+      <hr>
+      <div class="rw" style="align-items:center"><b>Total sementara</b><span class="tot" id="sumTot">Rp 95.000</span></div>
+      <small>Belum termasuk ongkos kirim. Ketersediaan produk dan total akhir akan dikonfirmasi oleh tim kami.</small>
+      <a class="btn w" id="waBtn" href="#">Lanjutkan ke WhatsApp →</a>
+      <small>Belum ada pembayaran pada tahap ini.</small>
+    </aside>
+  </div>
+
+  <div class="help"><div><h3>Masih ragu memilih shade?</h3><p>Beauty consultant kami siap membantu menemukan pilihan yang pas untuk kulit Anda.</p></div><a class="btn wh" data-wa href="#">Konsultasi dulu →</a></div>
+</div></main>
+
+<footer><div class="wrap"><div class="fb" style="border:0;margin:0;padding:0"><span>© 2026 Bellina Cosmetik Indonesia.</span><span><a href="#">Kebijakan Privasi</a><a href="#">Syarat &amp; Ketentuan</a></span></div></div></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
